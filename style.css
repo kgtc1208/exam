@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.login-form{
+    color: #96e6a1;
+    background: white;
+    border: white solid 1px;
+    border-radius: 25px;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 275px;
+    margin: 10px 10px;
+    color: #96e6a1;
+}
+
+h1{
+    font-size: 100px;
+    border-bottom: white solid 3px;
+    margin: 10px 10px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+input{
+    background: white;
+    border: none;
+    border-bottom: #96e6a1 solid 2px ;
+    outline: none;
+    width: 250px;
+}
+
+button{
+    background: white;
+    border: #96e6a1 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #96e6a1;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color:#96e6a1;
+}
+
+.err-msg {
+    display: none;
+}
+
+.disp-err-msg{
+    color: red;
+}
+
+span{
+    color: #96e6a1;
+    transition: all 1s ease;
+}
+
+span.light{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+    font-size: 65px;
+    border-bottom: white solid 3px;
+    margin: 10px 10px;
+    }
+}

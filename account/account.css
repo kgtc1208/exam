@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-btn{
+    display: none;
+}
+
+.fa-bars{
+    color:  #96e6a1;
+    transition: all 1s ease;
+}
+
+i{
+    font-size: 40px;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    height: 75px;
+    width: 100%;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+
+.logo{
+    color:  #96e6a1;
+    letter-spacing: 3px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    margin-left: auto;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.top-stories-nav{
+    display: none;
+}
+
+a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.form {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 450px;
+    margin: 10px 10px;
+    color: #96e6a1;
+}
+
+h1{
+    font-size: 50px;
+    border-bottom: white solid 3px;
+    margin: 10px 10px;
+}
+
+input{
+    background: white;
+    border: none;
+    border-bottom: #96e6a1 solid 2px ;
+    outline: none;
+    width: 250px;
+    font-size: 20px;
+}
+
+button{
+    background: white;
+    border: #96e6a1 solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #96e6a1;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 10px;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    .navbar{
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        height: 40vh;
+        width: 50%;
+        clip-path: circle(100px at 170% -10%);
+        -webkit-clip-path: circle(100px at 170% -10%);
+        border-bottom-left-radius: 100px;
+        transition: all 1s ease-out;
+    }
+
+    .navbar.visible{
+        clip-path: circle(1000px at 170% -10%);
+        -webkit-clip-path: circle(1000px at 170% -10%);
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .logo-container{
+        display: none;
+    }
+
+    .nav-btn{
+        position: fixed;
+        top: 2%;
+        right: 2%;
+        background: transparent;
+        border: none;
+        display: inline;
+        outline: none;
+        z-index: 1;
+    }
+
+    .fa-bars.visible{
+        color: white;
+    }
+
+    .nav-btn:hover{
+        cursor: pointer;
+    }

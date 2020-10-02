@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="https://kit.fontawesome.com/8d07e7b46c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <button class="nav-btn"><i class="fas fa-bars"></i></button>
+        <div class="navbar" id="navbar">
+            <div class="logo-container"><h2 class="logo">My Website</h2></div>
+            <ul class="nav-items">
+                <li class="home"><a href="../home/home.html" class>Home</a></li>
+                <li class="account"><a href="#">Account</a></li>
+                <li class="favorites"><a href="../favorites/favorites.html">Favorites</a></li>
+                <li class="logout"><a href="../index.html">Logout</a></li>
+            </ul>
+        </div>
+        <h1>User Information</h1>
+        <form class="form">
+            <input placeholder="Name" type="text" id="name">
+            <input placeholder="Username" type="text" id="username">
+            <input placeholder="Email" type="email" id="email">
+            <div class="form-btns">
+                <button type="button" id="save">Save</button>
+                <button type="button" id="back">Home</button>
+            </div>
+        </form>
+     </div>
+     <script src="account.js"></script>  
+</body>
+</html>
